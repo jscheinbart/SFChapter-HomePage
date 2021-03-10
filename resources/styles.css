@@ -1,0 +1,206 @@
+* {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+    margin: 0; /* or auto */
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: "Mukta";
+    background-color: #E2DADB; 
+    color:#FBFBFC;
+    opacity: .9;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;    
+    color: #E2DADB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #c0362c;
+    z-index: 10;
+}
+
+.links {
+    margin: 10px 30px 10px 10px;
+    color: #FBFBFC;
+    font-size: 1.8rem;
+}
+
+header {
+    background-image: url("golden-gate-bridge.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    min-height: 500px;
+    top: 80px;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-text {
+    position: relative;
+    top: 300px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    opacity: .9;
+    color: #2B3A67;
+}
+
+header h1,
+header h2 {
+    max-width: 380px;
+    padding: 10px 0px 10px 0px;
+}
+
+.social-media-icon {
+    height: 50px;
+    width: 60px;
+    padding: 25px;
+}
+
+.main-content{
+    display: inline-flex;
+    width: 100%;
+}
+
+.main-background {
+    background-image: url("lombard-street.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    width: 60%;
+}
+
+.mission {
+    background-image: url("painted-ladies.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    flex-direction: column;
+}
+
+.mission h2,
+.mission h3 {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    opacity: .9;
+    color: #2B3A67;
+    line-height: 2;
+}
+
+.about {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+    color: #FBFBFC;
+    background-color: #26547C;
+    padding: 20px;
+}
+
+.about h2 {
+    max-width: 350px;
+    padding: 20px;
+    opacity: .9;
+}
+
+.about p {
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 100px;
+    opacity: .9;
+    line-height: 1.8;
+}
+
+.events {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    background-color: white;
+    opacity: .9;
+    color: #2B3A67;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.events h2,
+.events p {
+    padding-top: 20px;
+}
+
+.events img {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+}
+
+footer {
+    position: relative;
+    background-color: #c0362c;
+    color: #FBFBFC;
+    line-height: 2;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        float: none;
+        width: 100%;
+    }
+    body {
+        font-size: 40px;
+    }
+
+    .main-content{
+        display: inline-block;
+        flex: 100%;
+    }
+    .main-background {
+        width: 100%
+    }
+
+    .about {
+        width: 100%;
+    }    
+}
